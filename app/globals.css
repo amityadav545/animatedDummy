@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: initial;
+}
+
+body.hide_header .header {
+  transform: translateY(-100%);
+}
+
+body .header {
+  background: #F2F4F4;
+  height: 100px;
+  z-index: 999;
+}
+
+body.scrolled .header {
+  background: white;
+  height: 70px;
+  z-index: 999;
+}
+
+.DomainSection {
+  position: relative;
+  background-color: #0e2244;
+}
+
+.footerSection {
+  background-color: #0e2244;
+}
+
+/* .DomainSection::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("../public/images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+
+} */
+.aboutSection {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0e224436;
+}
+
+.AboutContent {
+  position: relative;
+  background-color: #0e2244;
+}
+
+.careerSection {
+  position: relative;
+  background-color: #0e224447;
+  padding-top: 100px;
+  padding-bottom: 20px;
+
+}
+
+.ApplySection {
+  background-color: #0e2244;
+}
+
+.contactSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0e2244;
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+
+.careerSection::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("../public/images/hiring.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.9;
+
+}
+
+.SecondcareerSection {
+  background-color: #0e2244;
+}
+
+
+.aboutSection::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("../public/images/aboutfirst.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  mix-blend-mode: darken;
+  z-index: -1;
+  opacity: 0.9;
+
+}
+
+.impact-section {
+  position: relative;
+  background-color: #0e2244;
+}
+
+.Choose-section {
+  position: relative;
+  background-color: #0e2244c8;
+}
+
+.Choose-section::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("../public/images/choosebg2.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.6;
+
+}
+
+.main-swiper {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.main-swiper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 400px !important;
+  height: 400px !important;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.bg-blur {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  /* Semi-transparent white background */
+}
+
+.bg-blurs:hover {
+  background-color: rgba(255, 255, 255, 0.224) !important;
+  cursor: pointer;
+  /* Semi-transparent white background */
+}
+
+@media only screen and (max-width: 900px) {
+  .main-swiper .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px !important;
+    height: 300px !important;
+  }
+}

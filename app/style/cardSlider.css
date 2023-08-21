@@ -1,0 +1,26 @@
+.cardSlider {
+    background-color: #0e2244;
+}
+
+.cardSlider .swiper {
+    width: 100% !important;
+    height: 100% !important;
+
+
+}
+
+.cardSlider .swiper-slide {
+
+    font-size: 18px;
+    padding: 20px;
+
+    /* Center slide text vertically */
+
+}
+
+.cardSlider .swiper-slide img {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+}
